@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello MessageController!{% endblock %}
+{% block title %}Nicomak | Bienvenue{% endblock %}
 
 {% block body %}
 <style>
@@ -22,7 +22,7 @@
                 {{ message.message }} <br />
                 <span><i>Publié le: {{ message.createdAt|date('d/m/Y H:i:s') }} 
                 par {{ message.fromUser }}  à {{ message.toUser }}</i></span>
-            </li>
+            </li><br>
         {% endfor %}
         </ul>
     {% else %}

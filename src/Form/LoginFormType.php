@@ -15,9 +15,11 @@ class LoginFormType extends AbstractType
         $builder
             ->add('email', TextType::class, [
                 'label' => 'Enter votre e-mail',
+                'attr' => ['class' => 'form-control'], // Ajoutez une classe CSS ici
             ])
             ->add('password', PasswordType::class, [
                 'label' => 'Mot de passe',
+                'attr' => ['class' => 'form-control'], // Ajoutez une classe CSS ici
             ]);
     }
 
