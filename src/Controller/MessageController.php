@@ -31,7 +31,6 @@ class MessageController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            // $message->setCreatedAt(new \DateTime());
             $em->persist($message);
             $em->flush();
 
