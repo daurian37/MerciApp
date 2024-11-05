@@ -55,6 +55,8 @@
     <h1>Dire Merci</h1>
     <p><i>c'est reconnaître que chaque geste, chaque attention reçue, 
     est un cadeau précieux qui ne doit jamais être pris pour acquis.</i></p>
+
+
     {{ form_start(form) }}
         {{ form_row(form.message) }}  
         {{ form_row(form.createdAt) }}  
@@ -62,5 +64,9 @@
         {{ form_row(form.toUser) }} 
         <button class="btn">Envoyer</button>
     {{ form_end(form) }}
+
+    <br><br>
+    
+    <a href="{{ path('app_message') }}">Retour à la liste des messages</a>
 </div>
 {% endblock %}
